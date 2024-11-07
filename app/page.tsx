@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import logoB from "./public/img/logo_b.png"
-import logoW from "./public/img/asuna.png"
 import { user } from "./repository/user"
 import bcrypt from 'bcryptjs';
 
