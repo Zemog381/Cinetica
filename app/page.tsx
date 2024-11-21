@@ -15,7 +15,7 @@ export default function Home() {
   const [badLogin,setBadLogin] = useState(false);
   const [userField,setUserField] = useState('');
   const [passField,setPassField] = useState('');
-  const router = useRouter();
+  //const router = useRouter();
 
   function handleClick() {
     const pwdok = bcrypt.compareSync(passField,user.passeword)
@@ -51,7 +51,7 @@ export default function Home() {
           <div style={styles.navSection}>
             <h3 style={styles.sectionTitle}>Films</h3>
             <ul style={styles.navList}>
-              <Button>🎥 À l'affiche</Button>
+              <Button>🎥 À l affiche</Button>
               <Button>🌟 Populaires</Button>
               <Button>⭐ Les mieux notés</Button>
             </ul>
