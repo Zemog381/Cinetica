@@ -43,6 +43,73 @@ export default function Home() {
     </>
   );  
   else
-    router.push('./home')
-}
+  return (
+    <div style={styles.container}>
+      <aside style={styles.sidebar}>
+        <div style={styles.logo}>🎬 Cinetica</div>
+        <nav style={styles.nav}>
+          <div style={styles.navSection}>
+            <h3 style={styles.sectionTitle}>Films</h3>
+            <ul style={styles.navList}>
+              <Button>🎥 À l'affiche</Button>
+              <Button>🌟 Populaires</Button>
+              <Button>⭐ Les mieux notés</Button>
+            </ul>
+          </div>
+          <div style={styles.navSection}>
+            <h3 style={styles.sectionTitle}>Séries TV</h3>
+            <ul style={styles.navList}>
+              <Button>📺 En diffusion</Button>
+              <Button>🌟 Populaires</Button>
+              <Button>⭐ Les mieux notées</Button>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <main style={styles.content}>
+        <h1>Coding in progress...</h1>
+      </main>
+    </div>
+  );
+};
+
+const styles = {
+  container: {
+    display: "flex",
+    minHeight: "100vh",
+  },
+  sidebar: {
+    width: "250px",
+    backgroundColor: "#f0f0f0",
+    padding: "20px",
+    boxShadow: "2px 0 5px rgba(0,0,0,0.1)",
+  },
+  logo: {
+    fontSize: "20px",
+    fontWeight: "bold",
+    marginBottom: "20px",
+  },
+  nav: {
+    marginTop: "20px",
+  },
+  navSection: {
+    marginBottom: "20px",
+  },
+  sectionTitle: {
+    fontSize: "16px",
+    fontWeight: "bold",
+    marginBottom: "10px",
+  },
+  navList: {
+    listStyle: "none",
+    padding: 0,
+  },
+  content: {
+    flex: 1,
+    padding: "20px",
+    backgroundColor: "#fff",
+  },
+};
+    //router.push('./home')
+
 
