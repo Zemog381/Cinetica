@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+
 
 export default HomePage
 
@@ -44,7 +44,7 @@ const styles = {
 function HomePage () {
 return (
     <>
-        <h3> Coding in progress... </h3>
+        <h1> Coding in progress... </h1>
     </>
 )
 }
