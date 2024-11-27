@@ -9,7 +9,7 @@ import {
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
 
-import { MonitorPlay } from "lucide-react"
+import { MonitorPlay, Film, Sparkles, Star } from "lucide-react"
 
 import Image from "next/image"
 import logoB from "@/app/public/img/logo_b.png"
@@ -22,6 +22,7 @@ export const CinematicaSidebar = () => {
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel className="text-2xl">Films</SidebarGroupLabel>
+                    <SidebarGroupContent>
                     <SidebarMenu>
                         {items_film.map((item) => (
                             <SidebarMenuItem key={item.title}>
@@ -34,9 +35,11 @@ export const CinematicaSidebar = () => {
                             </SidebarMenuItem>
                          ))}
                     </SidebarMenu>
+                    </SidebarGroupContent>
                 </SidebarGroup>
                 <SidebarGroup>
                     <SidebarGroupLabel className="text-2xl">Séries TV</SidebarGroupLabel>
+                    <SidebarGroupContent>
                     <SidebarMenu>
                         {items_tv.map((item) => (
                             <SidebarMenuItem key={item.title}>
@@ -49,6 +52,7 @@ export const CinematicaSidebar = () => {
                             </SidebarMenuItem>
                          ))}
                     </SidebarMenu>
+                    </SidebarGroupContent>
                 </SidebarGroup>
             </SidebarContent>
         </Sidebar>
@@ -59,17 +63,17 @@ const items_film = [
     {
         title : "A l'affiche",
         url : "#",
-        icon : MonitorPlay
+        icon : Film
     },
     {
-        title : "A l'affiche",
+        title : "Populaires",
         url : "#",
-        icon : MonitorPlay
+        icon : Sparkles
     },
     {
-        title : "A l'affiche",
+        title : "Les mieux notés",
         url : "#",
-        icon : MonitorPlay
+        icon : Star
     }
 ]
 
@@ -80,13 +84,13 @@ const items_tv = [
         icon : MonitorPlay
     },
     {
-        title : "En diffusion",
+        title : "Populaires",
         url : "#",
-        icon : MonitorPlay
+        icon : Sparkles
     },
     {
-        title : "En diffusion",
+        title : "Les mieux notés",
         url : "#",
-        icon : MonitorPlay
+        icon : Star
     }
 ]
