@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { SessionProvider, signIn, useSession } from "next-auth/react"
+import { /*SessionProvider,*/ signIn, useSession } from "next-auth/react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -13,10 +13,10 @@ import { useState } from "react"
 
 
 export const LoginPage = () => {
-    const [badLogin,setBadLogin] = useState(false);
+    //const [badLogin,setBadLogin] = useState(false);
     const [userField,setUserField] = useState('');
     const [passField,setPassField] = useState('');
-    const {data : session, status, update} = useSession();
+    const {data : session/*, status, update*/} = useSession();
     return (
         <div className="grid h-screen place-items-center bg-black">
           <div className="grid p-14 w-full max-w-4xl gap-2 bg-zinc-200/90 rounded-3xl">
