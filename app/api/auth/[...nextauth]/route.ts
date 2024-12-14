@@ -2,7 +2,7 @@ import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import { user as crd } from "@/app/repository/user"
 import bcrypt from 'bcryptjs'
-import { redirect } from "next/dist/server/api-utils"
+//import { redirect } from "next/dist/server/api-utils"
 
 export const authOptions = {
   providers: [ 
