@@ -5,7 +5,7 @@ import bcrypt from 'bcryptjs'
 import {NEXTAUTH_SECRET} from "@/app/repository/user"
 //import { redirect } from "next/dist/server/api-utils"
 
-export const authOptions = {
+const authOptions = {
   secret : NEXTAUTH_SECRET,
   providers: [ 
       CredentialsProvider({
