@@ -14,7 +14,7 @@ export default async function Page({
     return (
     <> 
     <div>ID : {movieID}</div>
-    <p>Data : {JSON.stringify(mdm)}</p>
+    <p>{mdm.poster_path}</p>
     </>
     );
   }

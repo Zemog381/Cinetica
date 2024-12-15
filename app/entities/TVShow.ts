@@ -25,7 +25,6 @@ export interface TVShow {
     production_companies : Array<ProductionCompany>,    // 
     production_countries : Array<Country>,              //
     seasons : Array<Season>,
-
     spoken_languages : Array<Language>,                 // Langues
     status : String,                                    // "In Production" / "Released", jsp si y'en a d'autres
     tagline : String,                                   // "slogan"

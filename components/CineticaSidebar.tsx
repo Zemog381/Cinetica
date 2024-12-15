@@ -62,17 +62,17 @@ export const CinematicaSidebar = () => {
 const items_film = [
     {
         title : "A l'affiche",
-        url : "#",
+        url : "/movies/now-playing",
         icon : Film
     },
     {
         title : "Populaires",
-        url : "#",
+        url : "/movies/popular",
         icon : Sparkles
     },
     {
         title : "Les mieux notés",
-        url : "#",
+        url : "/movies/top-rated",
         icon : Star
     }
 ]
@@ -80,17 +80,17 @@ const items_film = [
 const items_tv = [
     {
         title : "En diffusion",
-        url : "#",
+        url : "/shows/on-the-air",
         icon : MonitorPlay
     },
     {
         title : "Populaires",
-        url : "#",
+        url : "/shows/popular",
         icon : Sparkles
     },
     {
         title : "Les mieux notés",
-        url : "#",
+        url : "/shows/top-rated",
         icon : Star
     }
 ]
