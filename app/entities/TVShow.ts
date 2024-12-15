@@ -1,4 +1,4 @@
-export interface Movie {
+export interface TVShow {
     adult : Boolean,                                    // +18 ?
     backdrop_path : String,                             // Lien vers Image d'arriere-plan
     created_by : Array<Creator>,                        //
