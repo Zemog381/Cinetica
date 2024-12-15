@@ -2,9 +2,11 @@ import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import { user as crd } from "@/app/repository/user"
 import bcrypt from 'bcryptjs'
+import {NEXTAUTH_SECRET} from "@/app/repository/user"
 //import { redirect } from "next/dist/server/api-utils"
 
 export const authOptions = {
+  secret : NEXTAUTH_SECRET,
   providers: [ 
       CredentialsProvider({
         name: 'Username + Password',
