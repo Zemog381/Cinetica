@@ -27,6 +27,23 @@ export interface Movie {
     vote_count : Number                                 // Nb de votes
 }
 
+export interface MovieShort {
+    adult : Boolean,
+    backdrop_path : String,
+    genre_ids : Array<Number>,
+    id : Number,
+    original_language : String,
+    original_title : String,
+    overview : String,
+    popularity : String,
+    poster_path : String,
+    release_date : String,
+    title : String,
+    video : Boolean,
+    vote_average : Number,
+    vote_count : Number
+}
+
 interface Genre {id : Number, name : String}
 interface ProductionCompany {id : Number, logo_path : String, name : String, origin_country : String}
 interface Country {iso_3166_1 : String, name : String}

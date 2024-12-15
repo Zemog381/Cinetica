@@ -34,6 +34,21 @@ export interface TVShow {
     vote_count : Number                                 // Nb de votes
 }
 
+export interface TVShowShort {
+    backdrop_path : String,
+    first_air_date : String,
+    genre_ids : Array<Number>,
+    id : Number,
+    name : String,
+    origin_country : Array<String>,
+    original_language : String,
+    overview : String,
+    popularity : String,
+    poster_path : String,
+    vote_average : Number,
+    vote_count : Number
+}
+
 interface Episode {
     id : Number,
     name : String,
