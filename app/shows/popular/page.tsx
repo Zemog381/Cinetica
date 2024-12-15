@@ -13,11 +13,11 @@ export default async function Page() {
     const rootUrl = headersList.get('host');
     const apiRes = (await fetch("http://"+rootUrl+"/api/shows/popular",{method:"GET"}));
     const apiResJSON = await apiRes.json() as TVSResponse;
-    const movieList = apiResJSON.results;
+    const showList = apiResJSON.results;
     return (
     <> 
     <div>Popular</div>
-    <p>Show 1 ; {JSON.stringify(movieList[1])}</p>
+    <p>Show 1 ; {JSON.stringify(showList[1])}</p>
     <p>Data : {JSON.stringify(apiResJSON)}</p>
     </>
     );
