@@ -1,4 +1,5 @@
 import { TVShowShort } from '@/app/entities/TVShow'
+import { TVShowShortComponent } from '@/components/TVShowShortComponent';
 import { headers } from 'next/headers'
 
 interface TVSResponse {
@@ -16,9 +17,12 @@ export default async function Page() {
     const showList = apiResJSON.results;
     return (
     <> 
-    <div>Top Rated</div>
-    <p>Show 1 ; {JSON.stringify(showList[1])}</p>
-    <p>Data : {JSON.stringify(apiResJSON)}</p>
+    <div>
+        <p className="text-center">Now Playing</p>
+        <div className="flex flex-row flex-wrap">
+            {showList.map((s) => (<TVShowShortComponent tvshow={s}/>))}
+        </div>
+    </div>
     </>
     );
   }

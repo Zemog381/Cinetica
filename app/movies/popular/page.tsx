@@ -1,4 +1,5 @@
 import { MovieShort } from '@/app/entities/Movie'
+import { MovieShortComponent } from '@/components/MovieShortComponent';
 import { headers } from 'next/headers'
 
 interface popularMoviesResponse {
@@ -16,9 +17,12 @@ export default async function Page() {
     const movieList = apiResJSON.results;
     return (
     <> 
-    <div>Popular</div>
-    <p>Movie 1 ; {JSON.stringify(movieList[1])}</p>
-    <p>Data : {JSON.stringify(apiResJSON)}</p>
+    <div>
+        <p className="text-center">Now Playing</p>
+        <div className="flex flex-row flex-wrap">
+            {movieList.map((m) => (<MovieShortComponent movie={m}/>))}
+        </div>
+    </div>
     </>
     );
   }
