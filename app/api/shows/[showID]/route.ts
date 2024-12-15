@@ -1,8 +1,8 @@
 import { NextRequest,NextResponse } from "next/server";
 
 export async function GET(req : NextRequest){
-    const movieID = req.nextUrl.pathname.replace('/api/movies/','');
-    const url = 'https://api.themoviedb.org/3/movie/' + movieID;
+    const movieID = req.nextUrl.pathname.replace('/api/shows/','');
+    const url = 'https://api.themoviedb.org/3/tv/' + movieID;
     const options = {
         method: 'GET',
         headers: {
