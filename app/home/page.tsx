@@ -40,11 +40,12 @@ const styles = {
     },
   };
   
+  import LogoutButton from '@/components/ui/logoutbutton';
 
 function HomePage () {
 return (
     <>
-        <h1> Coding in progress... </h1>
+        <h1> Selectionnez ce que vous voulez cherchez ou vous pouvez vous logout</h1>
     </>
 )
 }

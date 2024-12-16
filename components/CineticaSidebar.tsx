@@ -13,6 +13,7 @@ import { MonitorPlay, Film, Sparkles, Star } from "lucide-react"
 
 import Image from "next/image"
 import logoB from "@/app/public/img/logo_b.png"
+import LogoutButton from "./ui/logoutbutton"
 
 
 export const CinematicaSidebar = () => {
@@ -52,6 +53,7 @@ export const CinematicaSidebar = () => {
                             </SidebarMenuItem>
                          ))}
                     </SidebarMenu>
+                    <LogoutButton />
                     </SidebarGroupContent>
                 </SidebarGroup>
             </SidebarContent>

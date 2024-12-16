@@ -4,7 +4,7 @@ import { user as crd } from "@/app/repository/user"
 import bcrypt from 'bcryptjs'
 //import { redirect } from "next/dist/server/api-utils"
 
-export const authOptions = {
+const authOptions = {
   providers: [ 
       CredentialsProvider({
         name: 'Username + Password',
@@ -26,6 +26,6 @@ export const authOptions = {
     },
 }
 
-export const handler = NextAuth(authOptions)
+const handler = NextAuth(authOptions)
 
 export { handler as GET, handler as POST }
