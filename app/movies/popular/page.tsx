@@ -3,7 +3,7 @@ import { MovieShortComponent } from '@/components/MovieShortComponent';
 import { headers } from 'next/headers'
 
 interface popularMoviesResponse {
-    page : Number,
+    page : number,
     results : Array<MovieShort>,
     total_pages : number,
     total_results : number
