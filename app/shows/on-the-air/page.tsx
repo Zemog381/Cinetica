@@ -20,7 +20,7 @@ export default async function Page() {
     <div>
         <p className="text-center">On the air</p>
         <div className="flex flex-row flex-wrap">
-            {showList.map((s) => (<TVShowShortComponent tvshow={s}/>))}
+            {showList.map((s) => (<TVShowShortComponent key={s.id} tvshow={s}/>))}
         </div>
     </div>
     </>

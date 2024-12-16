@@ -24,7 +24,9 @@ export default async function Page() {
     <div>
         <p className="text-center">Now Playing</p>
         <div className="flex flex-row flex-wrap">
-            {movieList.map((m) => (<MovieShortComponent movie={m}/>))}
+            {movieList.map((m) => (
+                <MovieShortComponent key={m.id} movie={m} />
+            ))}
         </div>
     </div>
     </>
