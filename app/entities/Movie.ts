@@ -1,51 +1,51 @@
 export interface Movie {
-    adult : Boolean,                                    // +18 ?
-    backdrop_path : String,                             // Lien vers Image d'arriere-plan
+    adult : boolean,                                    // +18 ?
+    backdrop_path : string,                             // Lien vers Image d'arriere-plan
     belongs_to_collection : Collection,                 // Collection de films
     budget : Number,                                    // budget
     genres : Array<Genre>                               // Genres
-    homepage : String,                                  // ????
+    homepage : string,                                  // ????
     id : Number,                                        // id
-    imdb_id : String,                                   // id imdb
-    origin_country : Array<String>                      // Liste des pays (2 caracteres)
-    original_language : String,                         // Langue
-    original_title : String,                            // Titre original
-    overview : String,                                  // Synopsis
+    imdb_id : string,                                   // id imdb
+    origin_country : Array<string>                      // Liste des pays (2 caracteres)
+    original_language : string,                         // Langue
+    original_title : string,                            // Titre original
+    overview : string,                                  // Synopsis
     popularity : Number,                                // Popularite (jsp)
-    poster_path : String,                               // Lien vers Image du Poster
+    poster_path : string,                               // Lien vers Image du Poster
     production_companies : Array<ProductionCompany>,    // 
     production_countries : Array<Country>,              //
-    release_date : String,                              // Date de sortie
+    release_date : string,                              // Date de sortie
     revenue : Number,                                   // en dollar
     runtime : Number,                                   // Minutes
     spoken_languages : Array<Language>,                 // Langues
-    status : String,                                    // "In Production" / "Released", jsp si y'en a d'autres
-    tagline : String,                                   // "slogan"
-    title : String,                                     // Titre
-    video : Boolean,                                    // hein?
+    status : string,                                    // "In Production" / "Released", jsp si y'en a d'autres
+    tagline : string,                                   // "slogan"
+    title : string,                                     // Titre
+    video : boolean,                                    // hein?
     vote_average : Number,                              // Note sur 10
     vote_count : Number                                 // Nb de votes
 }
 
 export interface MovieShort {
-    adult : Boolean,
-    backdrop_path : String,
+    adult : boolean,
+    backdrop_path : string,
     genre_ids : Array<Number>,
     id : Number,
-    original_language : String,
-    original_title : String,
-    overview : String,
-    popularity : String,
-    poster_path : String,
-    release_date : String,
-    title : String,
-    video : Boolean,
+    original_language : string,
+    original_title : string,
+    overview : string,
+    popularity : string,
+    poster_path : string,
+    release_date : string,
+    title : string,
+    video : boolean,
     vote_average : Number,
     vote_count : Number
 }
 
-interface Genre {id : Number, name : String}
-interface ProductionCompany {id : Number, logo_path : String, name : String, origin_country : String}
-interface Country {iso_3166_1 : String, name : String}
-interface Language {english_name : String, iso_639_1 : String, name : String}
-interface Collection {id : Number, name : String, poster_path : String; backdrop_path : String}
+interface Genre {id : Number, name : string}
+interface ProductionCompany {id : Number, logo_path : string, name : string, origin_country : string}
+interface Country {iso_3166_1 : string, name : string}
+interface Language {english_name : string, iso_639_1 : string, name : string}
+interface Collection {id : Number, name : string, poster_path : string; backdrop_path : string}

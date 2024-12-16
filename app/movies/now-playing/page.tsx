@@ -4,13 +4,13 @@ import { headers } from 'next/headers'
 
 interface nowPlayingResponse {
     dates : {
-        maximum : String,
-        minimum : String
+        maximum : string,
+        minimum : string
     }
-    page : Number,
+    page : number,
     results : Array<MovieShort>,
-    total_pages : Number,
-    total_results : Number
+    total_pages : number,
+    total_results : number
 }
 
 export default async function Page() {

@@ -5,8 +5,8 @@ import { headers } from 'next/headers'
 interface popularMoviesResponse {
     page : Number,
     results : Array<MovieShort>,
-    total_pages : Number,
-    total_results : Number
+    total_pages : number,
+    total_results : number
 }
 
 export default async function Page() {

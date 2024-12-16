@@ -3,10 +3,10 @@ import { TVShowShortComponent } from '@/components/TVShowShortComponent';
 import { headers } from 'next/headers'
 
 interface TVSResponse {
-    page : Number,
+    page : number,
     results : Array<TVShowShort>,
-    total_pages : Number,
-    total_results : Number
+    total_pages : number,
+    total_results : number
 }
 
 export default async function Page() {
